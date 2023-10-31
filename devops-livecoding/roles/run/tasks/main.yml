@@ -1,0 +1,6 @@
+- name: Run Application
+  community.docker.docker_container :
+    name: application
+    image: elbachir80/tp-devops-simple-api
+    networks:
+      - name: network_one

@@ -1,0 +1,5 @@
+- name: Run Database
+  docker_container:
+    name: database
+    image: elbachir80/tp-devops-database
+

@@ -1,0 +1,6 @@
+- name: Create a data container
+  community.docker.docker_container:
+    name: database
+    image: elbachir80/tp-devops-database
+    networks :
+      - name: network_one

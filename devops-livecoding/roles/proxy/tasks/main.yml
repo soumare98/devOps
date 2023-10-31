@@ -1,0 +1,8 @@
+- name: Proxy
+  community.docker.docker_container:
+    name: proxy
+    image: elbachir80/tp-devops-httpd
+    ports:
+      - "80:80"
+    networks:
+      - name: network_one

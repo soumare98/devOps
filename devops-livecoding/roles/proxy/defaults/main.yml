@@ -1,0 +1,5 @@
+- name: Run Proxy
+  docker_container:
+    name: proxy
+    image: elbachir80/tp-devops-httpd
+

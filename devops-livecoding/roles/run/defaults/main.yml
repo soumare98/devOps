@@ -1,0 +1,7 @@
+- name: Run Application
+  docker_container:
+    name: application
+    image: elbachir80/tp-devops-simple-api
+    networks:
+      - name: your_custom_network
+

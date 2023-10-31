@@ -1,0 +1,4 @@
+- name: Install Menu Fixe
+  docker_container:
+    name: menu
+
