@@ -23,10 +23,9 @@ jobs:
 
 
       #finally build your app with the latest command
-      - name: mvn -B verify sonar:sonar -Dsonar.projectKey=bachir_simple-api -Dsonar.organization=Bachir -Dsonar.host.url=https://sonarcloud.io -Dsonar.token=${{ secrets.SONAR_TOKEN }}  --file ./simple-api/pom.xml
-
+      - name: Build and test with Maven
         working-directory: "devops-livecoding/simple-api"
-        run: mvn clean verify
+        run: mvn -B verify sonar:sonar -Dsonar.projectKey=bachir_simple-api -Dsonar.organization=Bachir -Dsonar.host.url=https://sonarcloud.io -Dsonar.token=${{ secrets.SONAR_TOKEN }}  --file ./simple-api/pom.xml
 
 
 
